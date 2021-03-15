@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cloudprojekt
+  labels:
+    app: cloudprojekt
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /cloudprojekt/
+        pathType: Prefix
+        backend:
+          service:
+            name: cloudprojekt
+            port:
+              number: 80
