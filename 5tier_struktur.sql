@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `ig2_3tier_automarken`
+-- Datenbank: `cloudprojekt`
 --
-CREATE DATABASE IF NOT EXISTS `ig2_3tier_automarken` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `ig2_3tier_automarken`;
+CREATE DATABASE IF NOT EXISTS `cloudprojekt` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `cloudprojekt`;
 
 DELIMITER $$
 --
