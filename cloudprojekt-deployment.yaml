@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   annotations:
   labels:
-    app.kubernetes.io/name: servicetool
-  name: servicetool
+    app.kubernetes.io/name: cloudprojekt
+  name: cloudprojekt
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app.kubernetes.io/name: servicetool
+      app.kubernetes.io/name: cloudprojekt
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: servicetool    
+        app.kubernetes.io/name: cloudprojekt    
     spec:
       containers:
-      - image: cloudprojekt/servicetool
+      - image: cntmodul/cloudprojekt
         imagePullPolicy: IfNotPresent
-        name: servicetool
+        name: cloudprojekt
         env:
         - name: DATABASE_HOST
           value: localhost
