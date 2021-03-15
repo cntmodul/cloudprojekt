@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - image: cntmodul/cloudprojekt
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         name: cloudprojekt
         env:
         - name: DATABASE_HOST
