@@ -23,11 +23,6 @@ spec:
         - name: DATABASE_HOST
           value: localhost
         - name: DATABASE_USER 
-          value: dbuser         
+          value: root         
         - name: DATABASE_NAME 
-          value: phplogin
-        - name: DATABASE_PASS 
-          valueFrom:
-           secretKeyRef:
-            name: database-pass
-            key: password       
+          value: cloudprojekt
