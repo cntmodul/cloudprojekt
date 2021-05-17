@@ -29,12 +29,21 @@
     kubectl get all
 
 
-## Ingress einrichten
+## Container image aufbereiten - wenn keine YAML Datei vorhanden ist nur Image
 
     kubectl delete deployment cloudprojekt
     kubectl delete service cloudprojekt
     kubectl delete ingress cloudprojekt
     kubectl create deployment cloudprojekt --image=cntmodul/cloudprojekt
     kubectl apply -f https://raw.githubusercontent.com/cntmodul/cloudprojekt/main/cloudprojekt-ingress.yaml
+    kubectl get all
+    
+ ## Container image aufbereiten - wenn YAML Datei vorhanden
+
+    kubectl delete deployment cloudprojekt
+    kubectl delete service cloudprojekt
+    kubectl delete ingress cloudprojekt
+    git clone https://github.com/cntmodul/cloudprojekt
+    kubectl apply -f cloudprojekt
     kubectl get all
     
