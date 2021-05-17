@@ -18,5 +18,12 @@
 
     kubectl create deployment cloudprojekt --image=registry.gitlab.com/cntmodul/cloudprojekt/cloudprojekt
     kubectl get all
-    kubectl expose deployment/cntproject --port 80 --type="LoadBalancer"
+    kubectl expose deployment/cloudprojekt --port 80 --type="LoadBalancer"
+    kubectl get all
+
+## Container holen laufen lassen (container image auf hub.docker.com)
+
+    kubectl create deployment cloudprojekt --image=cntmodul/cloudprojekt
+    kubectl get all
+    kubectl expose deployment/cloudprojekt --port 80 --type="LoadBalancer"
     kubectl get all
