@@ -27,3 +27,14 @@
     kubectl get all
     kubectl expose deployment/cloudprojekt --port 80 --type="LoadBalancer"
     kubectl get all
+
+
+## Ingress einrichten
+
+    kubectl delete deployment cloudprojekt
+    kubectl delete service cloudprojekt
+    kubectl delete ingress cloudprojekt
+    kubectl create deployment cloudprojekt --image=cntmodul/cloudprojekt
+    kubectl apply -f https://raw.githubusercontent.com/ar-do/cntproject/main/ingress.yaml
+    kubectl get all
+    
