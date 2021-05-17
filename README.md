@@ -45,6 +45,6 @@
     kubectl delete ingress cloudprojekt
     git clone https://github.com/cntmodul/cloudprojekt
     kubectl apply -f cloudprojekt
-    ##Alles anzeigen inkl ingress
+    ## Alles anzeigen inkl ingress
     kubectl get all,ingress
     
