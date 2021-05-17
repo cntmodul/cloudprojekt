@@ -19,10 +19,3 @@ spec:
       - image: cntmodul/cloudprojekt
         imagePullPolicy: Always
         name: cloudprojekt
-        env:
-        - name: DATABASE_HOST
-          value: localhost
-        - name: DATABASE_USER 
-          value: root         
-        - name: DATABASE_NAME 
-          value: cloudprojekt
