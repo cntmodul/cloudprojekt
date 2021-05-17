@@ -14,3 +14,7 @@
     kubectl apply -f cloudprojekt
 
 
+## Container holen laufen lassen
+
+    kubectl create deployment cloudprojekt --image=registry.gitlab.com/cntmodul/cloudprojekt
+    kubectl get all
