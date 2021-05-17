@@ -35,6 +35,6 @@
     kubectl delete service cloudprojekt
     kubectl delete ingress cloudprojekt
     kubectl create deployment cloudprojekt --image=cntmodul/cloudprojekt
-    kubectl apply -f https://raw.githubusercontent.com/cntmodul/cloudprojekt/ingress.yaml
+    kubectl apply -f https://raw.githubusercontent.com/cntmodul/cloudprojekt/cloudprojekt-ingress.yaml
     kubectl get all
     
