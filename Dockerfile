@@ -1,4 +1,5 @@
 FROM php:7.0-apache
-COPY *.php /var/www/html/
-COPY *.html /var/www/html/
-COPY *.sql /var/www/html/
+RUN mkdir /var/www/html/cloudprojekt
+COPY *.php /var/www/html/cloudprojekt/
+COPY *.html /var/www/html/cloudprojekt/
+COPY *.sql /var/www/html/cloudprojekt/
